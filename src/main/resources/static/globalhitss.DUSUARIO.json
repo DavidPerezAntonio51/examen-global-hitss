@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "65b1d0bdf5c4e72f447f5bbf"
+  },
+  "nombre": "David",
+  "aPaterno": "Pérez",
+  "aMaterno": "Antonio",
+  "roles": [
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8b954a26801e0a949aa"
+      }
+    },
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8a054a26801e0a949a9"
+      }
+    }
+  ],
+  "_class": "com.globalhitss.examenglobalhitss.Documentos.Usuario"
+},
+{
+  "_id": {
+    "$oid": "65b1d111f5c4e72f447f5bc0"
+  },
+  "nombre": "Juan",
+  "aPaterno": "Pérez",
+  "aMaterno": "Lopez",
+  "_class": "com.globalhitss.examenglobalhitss.Documentos.Usuario"
+},
+{
+  "_id": {
+    "$oid": "65b1d137f5c4e72f447f5bc1"
+  },
+  "nombre": "Daniel",
+  "aPaterno": "Pérez",
+  "aMaterno": "Antonio",
+  "roles": [
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8b954a26801e0a949aa"
+      }
+    },
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8a054a26801e0a949a9"
+      }
+    }
+  ],
+  "_class": "com.globalhitss.examenglobalhitss.Documentos.Usuario"
+},
+{
+  "_id": {
+    "$oid": "65b1d140f5c4e72f447f5bc2"
+  },
+  "nombre": "Diego",
+  "aPaterno": "Pérez",
+  "aMaterno": "Antonio",
+  "roles": [
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8b954a26801e0a949aa"
+      }
+    },
+    {
+      "$ref": "DROLES",
+      "$id": {
+        "$oid": "65b1b8a054a26801e0a949a9"
+      }
+    }
+  ],
+  "_class": "com.globalhitss.examenglobalhitss.Documentos.Usuario"
+},
+{
+  "_id": {
+    "$oid": "65b1d266f5c4e72f447f5bc3"
+  },
+  "nombre": "Diego Alberto",
+  "aPaterno": "Pérez",
+  "aMaterno": "Antonio",
+  "roles": [],
+  "_class": "com.globalhitss.examenglobalhitss.Documentos.Usuario"
+}]
