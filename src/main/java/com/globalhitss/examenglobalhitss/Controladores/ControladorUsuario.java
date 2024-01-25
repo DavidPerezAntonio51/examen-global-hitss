@@ -23,10 +23,31 @@ public class ControladorUsuario {
         return ResponseEntity.ok(servicioUsuarios.buscarTodosLosUsuarios());
     }
 
+    @GetMapping("/id/{id}")
+    public ResponseEntity<Usuario> buscarUsuarioPorId(@PathVariable String id){
+        return ResponseEntity.ok(servicioUsuarios.buscarUsuarioPorId(id));
+    }
+
+    @GetMapping("/nombre/{nombre}")
+    public ResponseEntity<Usuario> buscarUsuarioPorNombre(@PathVariable String nombre){
+        return ResponseEntity.ok(servicioUsuarios.buscarUsuarioPorNombre(nombre));
+    }
+
     @PostMapping
     public ResponseEntity<Usuario> crearNuevoUsuario(@RequestBody Usuario usuario, HttpServletRequest request){
         Usuario usuarioCreado = servicioUsuarios.crearNuevoUsuario(usuario);
         String uriDelRecurso = request.getRequestURI().concat("/" + usuarioCreado.getId());
         return ResponseEntity.created(URI.create(uriDelRecurso)).body(usuarioCreado);
+    }
+
+    @PutMapping
+    public ResponseEntity<Usuario> modificarDatosDelUsuario(@RequestBody Usuario usuarioModificado){
+        return ResponseEntity.ok(servicioUsuarios.modificarDatosUsuario(usuarioModificado));
+    }
+
+    @DeleteMapping("/id/{id}")
+    public ResponseEntity<?> eliminarUsuario(@PathVariable String id){
+        servicioUsuarios.eliminarUsuario(id);
+        return ResponseEntity.noContent().build();
     }
 }
